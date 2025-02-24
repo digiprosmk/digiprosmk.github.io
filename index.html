@@ -43,7 +43,8 @@
 </head>
 <body>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
+        <!-- Gallery items will be dynamically inserted here -->
         <!-- Gallery Item 1 -->
         <div class="gallery-item">
             <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_1.jpg" alt="Image 1">
@@ -86,6 +87,53 @@
         </div>
         <!-- More items can be added here similarly -->
     </div>
+
+    <script>
+        // Array of image names (without file extension)
+        const imageNames = [
+            'IMG_1',
+            'IMG_2',
+            'IMG_3',
+            // Add more image names as needed
+        ];
+        
+        const gallery = document.getElementById('gallery');
+
+        imageNames.forEach(imageName => {
+            const imageURL = `https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/${imageName}.jpg`;
+            const captionURL = `https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/artists/${imageName}.txt`;
+
+            // Create gallery item element
+            const galleryItem = document.createElement('div');
+            galleryItem.classList.add('gallery-item');
+
+            // Create image element
+            const img = document.createElement('img');
+            img.src = imageURL;
+            img.alt = imageName;
+
+            // Fetch caption from the text file
+            fetch(captionURL)
+                .then(response => response.text())
+                .then(captionText => {
+                    // Create caption element
+                    const caption = document.createElement('div');
+                    caption.classList.add('caption');
+                    caption.textContent = captionText;
+                    galleryItem.appendChild(caption);
+                })
+                .catch(error => {
+                    // Handle errors (if text file is not found)
+                    console.error('Error fetching caption:', error);
+                });
+
+            // Append image to the gallery item
+            galleryItem.appendChild(img);
+
+            // Add the gallery item to the gallery
+            gallery.appendChild(galleryItem);
+        });
+    </script>
 
 </body>
 </html>
