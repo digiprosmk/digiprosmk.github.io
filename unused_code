@@ -1,0 +1,39 @@
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_1.jpg" alt="Image 1">
+            <div class="caption">Image 1</div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_2.jpg" alt="Image 2">
+            <div class="caption">Image 2</div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_3.jpg" alt="Image 3">
+            <div class="caption">Image 3</div>
+        </div>
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_4.jpg" alt="Image 4">
+            <div class="caption">Image 3</div>
+        </div>
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_5.jpg" alt="Image 5">
+            <div class="caption">Image 3</div>
+        </div>
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_6.jpg" alt="Image 6">
+            <div class="caption">Image 3</div>
+        </div>
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_7.jpg" alt="Image 7">
+            <div class="caption">Image 3</div>
+        </div>
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/digiprosmk/digiprosmk.github.io/main/images/IMG_8.jpg" alt="Image 8">
+            <div class="caption">Image 3</div>
+        </div>
